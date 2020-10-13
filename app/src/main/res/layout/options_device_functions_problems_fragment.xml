@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/gradientbutton"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:layout_gravity="left"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/idbackfunctional"
+                    android:layout_gravity="center"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:tint="#fff" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="2dp"
+                    android:id="@+id/idhomefunctional"
+                    android:layout_gravity="center"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="10dp"
+                    android:tint="#fff"
+                    android:src="@drawable/ic_home_black_24dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#fff"
+
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Select the Functional Issues in your phone"/>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_above="@+id/idllfloat"
+        android:layout_marginTop="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        //ROW1
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:layout_weight=".50">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical"
+                    android:padding="7dp"
+                    android:background="@drawable/circle_layout"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bluetooth"></LinearLayout>
+
+                    <TextView
+                        android:paddingTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bluetooth"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:checked="true"
+                    android:id="@+id/cb_bluetooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-0dip"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:button="@drawable/custom_checkbox"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:layout_weight=".50"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:background="@drawable/circle_layout"
+                    >
+
+
+                    <LinearLayout
+
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/map"
+                        >
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GPS"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_gps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+
+
+                    android:layout_marginBottom="-0dip"
+                    android:button="@drawable/custom_checkbox" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        //ROW 2
+
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:layout_weight=".50">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:background="@drawable/circle_layout"
+                    >
+
+
+
+                    <LinearLayout
+                        android:paddingTop="3dp"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/wifi">
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wi-Fi"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+
+
+                    android:layout_marginBottom="-0dip"
+                    android:button="@drawable/custom_checkbox" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:layout_weight=".50"
+                >
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/circle_layout"
+                    >
+
+
+
+                    <LinearLayout
+
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/camera"
+                        >
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back Camera"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_backcamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+
+
+                    android:layout_marginBottom="-0dip"
+                    android:button="@drawable/custom_checkbox" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        //ROW3
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:layout_weight=".50">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/circle_layout"
+                    >
+
+
+
+                    <LinearLayout
+
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/selfie">
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Front Camera"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_frontcamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+
+
+                    android:layout_marginBottom="-0dip"
+                    android:button="@drawable/custom_checkbox" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:layout_weight=".50"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/circle_layout"
+                    >
+
+
+
+                    <LinearLayout
+
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/vup"
+                        >
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Volume +"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_volumeup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+
+
+                    android:layout_marginBottom="-0dip"
+                    android:button="@drawable/custom_checkbox" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        //ROW 4
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:layout_weight=".50">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/circle_layout"
+                    >
+
+
+                    <LinearLayout
+
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/vdown">
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Volume -"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_volumedown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+
+                    android:layout_marginBottom="-0dip"
+                    android:button="@drawable/custom_checkbox" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:layout_weight=".50"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/circle_layout"
+                    >
+
+
+
+                    <LinearLayout
+
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/touch"
+                        >
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Touch"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_touch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+
+                    android:layout_marginBottom="-0dip"
+                    android:button="@drawable/custom_checkbox" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        //ROW 5
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:layout_weight=".50">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/circle_layout"
+                    >
+
+
+
+                    <LinearLayout
+
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/vibration">
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vibration"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_vibration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+
+
+                    android:layout_marginBottom="-0dip"
+                    android:button="@drawable/custom_checkbox" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:layout_weight=".50"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:background="@drawable/circle_layout"
+                    >
+
+
+
+
+                    <LinearLayout
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/flashlight"
+                        >
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flashlight"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_flashlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="-0dip"
+                    android:button="@drawable/custom_checkbox" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+        //ROW 6
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:layout_weight=".50">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/circle_layout"
+                    >
+
+
+                    <LinearLayout
+
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/speaker">
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Speaker"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_speaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="-0dip"
+                    android:button="@drawable/custom_checkbox" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:layout_weight=".50"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/circle_layout"
+                    >
+
+
+                    <LinearLayout
+
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/network"
+                        >
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Network"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_network"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="-0dip"
+                    android:button="@drawable/custom_checkbox" />
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+        //ROW7
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:layout_weight=".50">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/circle_layout"
+                    >
+
+
+                    <LinearLayout
+
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/charging">
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Charging"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_charging"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+
+
+                    android:layout_marginBottom="-0dip"
+                    android:button="@drawable/custom_checkbox" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:layout_weight=".50"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/circle_layout"
+                    >
+
+
+                    <LinearLayout
+
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/battery"
+                        >
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Battery"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_battery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+
+                    android:layout_marginBottom="-0dip"
+                    android:button="@drawable/custom_checkbox" />
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        //ROW 8
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:layout_weight=".50">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/circle_layout"
+                    >
+
+
+                    <LinearLayout
+
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/fingerprint">
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:paddingTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="fingerprint"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_fingerprint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="-0dip"
+                    android:button="@drawable/custom_checkbox" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="10dp"
+                android:layout_weight=".50"
+                >
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:id="@+id/idllfloat"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/idfloatbtnfunctionl"
+            android:layout_marginRight="20dp"
+            app:backgroundTint="@color/orange"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            app:fabSize="normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</RelativeLayout>

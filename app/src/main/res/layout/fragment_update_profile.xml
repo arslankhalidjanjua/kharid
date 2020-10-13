@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/idnavbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange">
+
+
+
+        <ImageView
+            android:id="@+id/idbackemail"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_action_back_white"
+            android:tint="#fff" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/idnavbar"
+        android:layout_above="@+id/idbtnotherdetailsave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_proprietername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Proprieter Name"
+                        android:importantForAutofill="no"
+                        android:textColorHint="#6E2C90" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_shopname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Shop Name"
+                        android:importantForAutofill="no"
+                        android:textColorHint="#6E2C90" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+
+                        android:id="@+id/edit_salesmannumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Used Mobile Salesman Number e.g. 03675744123"
+                        android:importantForAutofill="no"
+                        android:maxLength="11"
+                        android:inputType="number"
+                        android:textColorHint="#6E2C90" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+<!--                    <EditText-->
+
+<!--                        android:id="@+id/edit_selleremail"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="Email"-->
+<!--                        android:importantForAutofill="no"-->
+<!--                        android:inputType="textEmailAddress"-->
+<!--                        android:textColorHint="#6E2C90" />-->
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+<!--                    <EditText-->
+
+<!--                        android:id="@+id/edit_cnic"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="CNIC e.g. 00000-0000000-0"-->
+<!--                        android:inputType="number|textPhonetic"-->
+<!--                        android:maxLength="15"-->
+<!--                        android:importantForAutofill="no"-->
+
+<!--                        android:textColorHint="#6E2C90" />-->
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@drawable/roundedittext"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/textinputtowncode"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical">-->
+
+
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="6dp"-->
+<!--                        android:text="Select Province"-->
+<!--                        android:layout_margin="5dp"-->
+<!--                        android:textColor="@color/darkgrey"-->
+<!--                        android:textSize="15dp">-->
+
+<!--                    </TextView>-->
+
+<!--                    <Spinner-->
+<!--                        android:id="@+id/edit_province_spinner"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="33dp"-->
+
+<!--                        />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@drawable/roundedittext"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/textinputtowncode1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical">-->
+
+
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="6dp"-->
+<!--                        android:text="Select City"-->
+<!--                        android:layout_margin="5dp"-->
+<!--                        android:textColor="@color/darkgrey"-->
+<!--                        android:textSize="15dp">-->
+
+<!--                    </TextView>-->
+
+<!--                    <Spinner-->
+<!--                        android:id="@+id/edit_city"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="33dp"-->
+
+<!--                        />-->
+
+<!--                </LinearLayout>-->
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundedittext"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:text="Upload Bank Cheque Copy"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/bank_check_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/imagviewicon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundedittext"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:text="Upload CNIC Copy of Both sides"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundedittext"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/cnic_side_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/imagviewicon" />
+
+                        <ImageView
+                            android:id="@+id/cnic_side_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/imagviewicon" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+
+                    android:id="@+id/idedittextaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/roundedittext"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#bdbdbd"
+                    android:hint="Address"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundedittext"
+                    android:orientation="vertical">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:id="@+id/textinputpassid"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <EditText
+
+                            android:id="@+id/new_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="New Password"
+                            android:importantForAutofill="no"
+                            android:inputType="textPassword"
+                            android:textColorHint="#6E2C90" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:id="@+id/textinputconfirmpassid"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+<!--                        <EditText-->
+
+<!--                            android:id="@+id/new_password_confirm"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:hint="Confirm New Password"-->
+<!--                            android:importantForAutofill="no"-->
+<!--                            android:inputType="textPassword"-->
+<!--                            android:textColorHint="#6E2C90" />-->
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/idbtnotherdetailsave"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/orange"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        android:textSize="17sp" />
+</RelativeLayout>

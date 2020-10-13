@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp"
+    android:layout_marginTop="5dp"
+    android:gravity="center"
+    android:id="@+id/idllrvstorage"
+    android:background="@drawable/btnstylemodel"
+    android:layout_height="50dp">
+
+     <TextView
+         android:textColor="#000"
+         android:id="@+id/idrvstoragetv"
+         android:layout_gravity="center"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Model1"/>
+
+
+</LinearLayout>

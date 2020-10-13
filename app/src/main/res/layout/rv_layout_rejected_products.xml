@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:id="@+id/bankcardId"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_used_status"
+                        android:layout_width="60dp"
+                        android:layout_height="23dp"
+
+                        android:background="@color/orange"
+                        android:text="Used"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:padding="10dp"
+                    android:src="@drawable/abc_vector_test" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/idtvabrand"
+                        android:paddingLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#000"
+                        android:text="Samsung"/>
+
+                    <ImageView
+                        android:id="@+id/idimdellproduct"
+                        android:layout_marginRight="5dp"
+                        android:tint="@color/redish"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/deleteicon"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/idtvamodel"
+                    android:paddingLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#000"
+                    android:text="S8 Plus"/>
+                <TextView
+
+                    android:id="@+id/idtvacolor"
+                    android:paddingLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#000"
+                    android:text="Black"/>
+                <TextView
+
+                    android:id="@+id/idtvastorage"
+                    android:paddingLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#000"
+                    android:text="32GB"/>
+                <TextView
+                    android:id="@+id/id_pta_approved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="Pta Approved"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_marginTop="14dp"
+                    android:id="@+id/idtvaprice"
+                    android:paddingLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:text="Price : 45000"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>

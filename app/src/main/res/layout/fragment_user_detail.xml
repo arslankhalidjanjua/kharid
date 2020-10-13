@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#eceff1"
+        android:orientation="vertical"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="#fff"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User Detail"/>
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/idimgclosepopup"
+                    android:src="@drawable/ic_close_black_24dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:background="@color/lightgrey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:id="@+id/idtvshortdetail"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Samsung S8Plus 64Gb"/>
+                <TextView
+                    android:id="@+id/idtvprice"
+                    android:textSize="16dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#f44336"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Price : 20000Rs"/>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:background="#f5f5f5"
+                    android:layout_height="5dp">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/idtvemaill"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="20dp"
+                        android:textSize="14dp"
+                        android:textColor="#000"
+                        android:layout_width="145dp"
+                        android:textAllCaps="true"
+                        android:layout_height="wrap_content"
+                        android:text="Email"/>
+                    <TextView
+                        android:id="@+id/idtvuseremail"
+                        android:layout_gravity="center"
+                        android:textSize="13dp"
+                        android:paddingLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Approved"/>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/idtvbrand"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="20dp"
+                        android:textSize="14dp"
+                        android:textColor="#000"
+                        android:layout_width="145dp"
+                        android:textAllCaps="true"
+                        android:layout_height="wrap_content"
+                        android:text="Contact"/>
+
+                    <TextView
+                        android:id="@+id/idtvphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:textSize="13dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:paddingTop="2dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="20dp"
+                        android:textSize="14dp"
+                        android:textColor="#000"
+                        android:layout_width="145dp"
+                        android:textAllCaps="true"
+                        android:layout_height="wrap_content"
+                        android:text="City"/>
+                    <TextView
+                        android:id="@+id/idtvcity"
+                        android:layout_gravity="center"
+                        android:textSize="13dp"
+                        android:paddingLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/idadress"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="20dp"
+                        android:textSize="14dp"
+                        android:textColor="#000"
+                        android:layout_width="145dp"
+                        android:textAllCaps="true"
+                        android:layout_height="wrap_content"
+                        android:text="Address"/>
+                    <TextView
+                        android:id="@+id/idtvaddressuserdetail"
+                        android:layout_gravity="center"
+                        android:textSize="13dp"
+                        android:paddingLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/idwaittv"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="20dp"
+                        android:textSize="14dp"
+                        android:textColor="#000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wait ..."/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

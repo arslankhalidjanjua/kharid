@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/idllcard"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/gradientbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="45dp">
+                    <LinearLayout
+                        android:layout_gravity="left"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/idbackprice"
+                            android:layout_gravity="center"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="10dp"
+                            android:tint="#fff"
+                            android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/idhomeprice"
+                            android:padding="2dp"
+                            android:layout_gravity="center"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="10dp"
+                            android:tint="#fff"
+                            android:src="@drawable/ic_home_black_24dp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/ifflotll"
+        android:layout_below="@+id/idllcard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/idheaderbrandplusmodel"
+                android:layout_gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingBottom="5dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Samsung S8plus"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/lightgrey"
+                        android:background="@drawable/linearcircular"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp">
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/idtvbrandpricefrag"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:text="Brand Samsung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/lightgrey"
+                        android:background="@drawable/linearcircular"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp">
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/idtvmodelpricefrag"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:text="Model MG-101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/lightgrey"
+                        android:background="@drawable/linearcircular"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp">
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/idtvramrompricefrag"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:text="Ram/Rom  2/32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/lightgrey"
+                        android:background="@drawable/linearcircular"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp">
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/idtvcolorpricefrag"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:text="Color Black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/lightgrey"
+                    android:background="@drawable/linearcircular"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp">
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/idtvptapricefrag"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="Color Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accidental Warranty"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/idradioroupaccidental"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/radioyes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:id="@+id/radioNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No" />
+
+                    </RadioGroup>
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"/>
+
+
+
+                <RadioGroup
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/idradioroupsim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioSingle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Single" />
+
+                    <RadioButton
+                        android:id="@+id/radioDual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Dual" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Warranty Type"/>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:background="@drawable/circle_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/warranty_type">
+
+                </Spinner>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingLeft="12dp"
+                android:paddingBottom="5dp"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"/>
+
+            <EditText
+                android:id="@+id/idedprice"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/circle_layout"
+                android:hint="Enter price"
+                android:layout_marginBottom="30dp"
+                android:padding="10dp" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ifflotll"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/idfloatbtnprice"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            app:backgroundTint="@color/orange"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            app:fabSize="normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

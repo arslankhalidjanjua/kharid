@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/idllbartop"
+        android:orientation="vertical"
+        android:background="@drawable/gradientbutton"
+        android:layout_width="match_parent"
+        android:layout_height="135dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:layout_gravity="left"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="2dp"
+                    android:id="@+id/idbackdeviceage"
+                    android:layout_gravity="center"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:tint="#fff"
+                    android:src="@drawable/ic_arrow_back_black_24dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="2dp"
+                    android:id="@+id/idhomedeviceage"
+                    android:layout_gravity="center"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="10dp"
+                    android:tint="#fff"
+                    android:src="@drawable/ic_home_black_24dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Help us predict more accurate price for your phone"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_below="@+id/idllbartop"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+
+            android:layout_above="@id/idllfloat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/redii"
+                    android:background="@drawable/linearcircular"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp">
+                    <ImageView
+                        android:tint="#fff"
+                        android:layout_gravity="center"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/iconmob"/>
+                </LinearLayout>
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="Dot/Patches on Screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/patches_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/lightgrey"
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:backgroundTint="#d500f9"
+                    android:background="@drawable/linearcircular"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp">
+                    <ImageView
+                        android:tint="#fff"
+                        android:layout_gravity="center"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/iconmob"/>
+                </LinearLayout>
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="Scratches on Body/Screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/scratches_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/lightgrey"
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:backgroundTint="#536dfe"
+                    android:background="@drawable/linearcircular"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp">
+                    <ImageView
+                        android:tint="#fff"
+                        android:layout_gravity="center"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/iconmob"/>
+                </LinearLayout>
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="Damage sign on Body/Screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/damage_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/lightgrey"
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/darkgreentype"
+                    android:background="@drawable/linearcircular"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp">
+                    <ImageView
+                        android:tint="#fff"
+                        android:layout_gravity="center"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/iconmob"/>
+                </LinearLayout>
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="Original Charger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/original_charger_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="true" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/lightgrey"
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:backgroundTint="#000"
+                    android:background="@drawable/linearcircular"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp">
+                    <ImageView
+                        android:tint="#fff"
+                        android:layout_gravity="center"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/iconmob"/>
+                </LinearLayout>
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="Age of the Phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/age_of_phone_dd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/lightgrey"
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/darkgreentype"
+                    android:background="@drawable/linearcircular"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp">
+                    <ImageView
+                        android:tint="#fff"
+                        android:layout_gravity="center"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/iconmob"/>
+                </LinearLayout>
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="Overall Phone Condition Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <RatingBar
+                android:layout_gravity="center"
+                android:id="@+id/rating1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:saveEnabled="true"
+                android:progressTint="#00c853"
+                android:numStars="5"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:background="@color/lightgrey"
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <LinearLayout
+
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:id="@+id/idllfloat"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/idfloatbtnage"
+            android:layout_marginRight="20dp"
+            app:backgroundTint="@color/orange"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            app:fabSize="normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

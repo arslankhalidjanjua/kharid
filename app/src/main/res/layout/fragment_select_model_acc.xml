@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fafafa"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/gradientbutton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_gravity="left"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+
+                            android:id="@+id/idbackmodel"
+                            android:layout_gravity="center"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="10dp"
+                            android:tint="#fff"
+                            android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:padding="2dp"
+                            android:id="@+id/idhomeimodel"
+                            android:layout_gravity="center"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="10dp"
+                            android:tint="#fff"
+                            android:src="@drawable/ic_home_black_24dp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/idllheading"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="22dp"
+                        android:textAllCaps="false"
+                        android:layout_width="250dp"
+                        android:layout_height="65dp"
+                        android:text="Sell Your Smartphone in very less time!"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="180dp"
+                card_view:cardElevation="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                app:cardCornerRadius="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Model you want to sell"/>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+
+        <androidx.core.widget.NestedScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/rvmodels"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+</FrameLayout>

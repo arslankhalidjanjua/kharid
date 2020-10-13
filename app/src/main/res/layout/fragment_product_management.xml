@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+   android:background="?android:attr/windowBackground"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/orange"
+        android:layout_height="45dp">
+        <ImageView
+            android:padding="2dp"
+            android:id="@+id/idbackproduct"
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:tint="#fff"
+            android:src="@drawable/ic_arrow_back_black_24dp"/>
+        <TextView
+
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:text="Mobiley Parteners"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/gradientbutton"
+            android:layout_height="180dp">
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="Product Management"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="135dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                card_view:cardCornerRadius="2dp"
+
+                android:id="@+id/idcvaddproduct">
+
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:tint="@color/orange"
+                        android:src="@drawable/addproducticon"/>
+                    <TextView
+                        android:layout_marginTop="35dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="Add Product"/>
+
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="2dp"
+                android:background="@color/lightgrey"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                card_view:cardCornerRadius="2dp"
+                android:id="@+id/idcvpending"
+               >
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:tint="#ff6f00"
+                    android:src="@drawable/pendingcion"/>
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Pending"/>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_width="match_parent"
+                android:background="@color/lightgrey"
+                android:layout_height="2dp">
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                card_view:cardCornerRadius="2dp"
+                android:id="@+id/idcvapproved"
+               >
+
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:tint="#00c853"
+                    android:src="@drawable/approvedicon"/>
+                <TextView
+                    android:layout_marginTop="35dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Approved"/>
+
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="2dp"
+                android:background="@color/lightgrey"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:elevation="10dp"
+                card_view:cardCornerRadius="2dp"
+                android:id="@+id/idcvreject">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:tint="@color/redii"
+                        android:src="@drawable/ic_close_black_24dp"/>
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="Rejected"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

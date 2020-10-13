@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/gradientbutton"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_gravity="left"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/idbackpta"
+
+                            android:layout_gravity="center"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="10dp"
+                            android:tint="#fff"
+                            android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/idhomepta"
+                            android:padding="2dp"
+                            android:layout_gravity="center"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="10dp"
+                            android:tint="#fff"
+                            android:src="@drawable/ic_home_black_24dp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/idllheading"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="22dp"
+                        android:textAllCaps="false"
+                        android:layout_width="250dp"
+                        android:layout_height="65dp"
+                        android:text="Sell Your Smartphone in very less time!"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="150dp"
+                card_view:cardElevation="5dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                app:cardCornerRadius="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PTA Registeration and Warranty"/>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PTA Approved"/>
+
+                <RadioGroup
+                    android:id="@+id/idradiorouppta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Approved"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not Approved" />
+                    <RadioButton
+                        android:id="@+id/radiooneimei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Only 1 Imei Approved" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/idfloatbtnpta"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                app:backgroundTint="@color/orange"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                app:fabSize="normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+
+
+
+
+

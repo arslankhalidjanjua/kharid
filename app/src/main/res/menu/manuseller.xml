@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:state_checked="true"
+        android:id="@+id/idproducttab"
+        android:icon="@drawable/ic_email_black_24dp"
+        android:iconTint="#000"
+        android:title="Product" />
+
+    <item
+        android:state_checked="true"
+        android:id="@+id/idorders"
+        android:icon="@drawable/ic_local_phone_black_24dp"
+        android:iconTint="#000"
+        android:title="Orders" />
+    <item
+        android:state_checked="true"
+        android:id="@+id/idprofile"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:iconTint="#000"
+        android:title="Profile" />
+    <item
+        android:state_checked="true"
+        android:id="@+id/idmore"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:iconTint="#000"
+        android:title="" />
+
+
+
+
+</menu>

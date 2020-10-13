@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SubscriptionPlan"
+    android:background="@color/lightgrey3">
+
+
+    <LinearLayout
+        android:id="@+id/idnavbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/orange">
+
+        <ImageView
+            android:id="@+id/idback"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:tint="#fff" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativePlan"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+       android:layout_below="@id/idnavbar"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/darkgreentype"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="12dp"
+            android:elevation="6dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtPlanName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MONTHLY"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:layout_below="@id/txtPlanName"
+                    android:id="@+id/txtPriceOld"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RS:  ̶3̶0̶0̶0̶"
+                    android:layout_margin="10dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:layout_below="@id/txtPriceOld"
+                    android:id="@+id/txtPriceOff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OFF: 50%"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:layout_below="@id/txtPriceOff"
+                    android:id="@+id/txtPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RS: 1500 ONLY"
+                    android:layout_margin="10dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:layout_below="@id/txtPrice"
+                    android:id="@+id/txtBasic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BASIC PLAN"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#000"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <TextView
+        android:gravity="center"
+        android:layout_below="@id/relativePlan"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:padding="10dp"
+        android:id="@+id/txtPlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Select Payment Method...." />
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/relativeBtn"
+        android:layout_below="@+id/txtPlan"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnManual"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Manual"
+                android:gravity="center"/>
+            <ImageView
+                android:id="@+id/imgTick1"
+                android:layout_marginTop="-4dp"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_tick"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnJazz"
+            android:layout_toEndOf="@id/btnCredit"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="JazzCash"
+                android:gravity="center"/>
+            <ImageView
+                android:visibility="invisible"
+                android:layout_toEndOf="@id/imgTick2"
+                android:id="@+id/imgTick3"
+                android:layout_marginTop="-4dp"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_tick"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnCredit"
+            android:layout_toEndOf="@id/btnManual"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Credit"
+                android:gravity="center"/>
+            <ImageView
+                android:visibility="invisible"
+                android:layout_toEndOf="@id/imgTick1"
+                android:id="@+id/imgTick2"
+                android:layout_marginTop="-4dp"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_tick"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnEasypaisa"
+            android:layout_toEndOf="@id/btnJazz"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Easypaisa"
+                android:gravity="center"/>
+            <ImageView
+                android:visibility="invisible"
+                android:layout_toEndOf="@id/imgTick3"
+                android:id="@+id/imgTick4"
+                android:layout_marginTop="-4dp"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_tick"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <Button
+        android:gravity="center"
+        android:layout_below="@id/relativeBtn"
+        android:textColor="#fff"
+        android:background="@color/orange"
+        android:textSize="17sp"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:id="@+id/txtCont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue..." />
+    <RelativeLayout
+        android:id="@+id/relativeB"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/green1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_hollo_circle"/>
+        <View
+            android:layout_toEndOf="@id/green1"
+            android:id="@+id/line1"
+            android:layout_centerVertical="true"
+            android:layout_width="100dp"
+            android:layout_height="0.5dp"
+            android:background="#757575"/>
+        <ImageView
+            android:layout_toEndOf="@id/line1"
+            android:id="@+id/green2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_hollo_circle"/>
+        <View
+            android:layout_toEndOf="@id/green2"
+            android:id="@+id/line2"
+            android:layout_centerVertical="true"
+            android:layout_width="100dp"
+            android:layout_height="0.5dp"
+            android:background="#757575"/>
+        <ImageView
+            android:layout_toEndOf="@id/line2"
+            android:id="@+id/green3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_filled_circle"/>
+
+    </RelativeLayout>
+</RelativeLayout>
